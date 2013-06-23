@@ -8,7 +8,8 @@ gem 'rails', '3.2.13'
 gem 'mysql2'
 
 group :development, :test do
-  gem 'rspec-rails', '2.9.0'
+  gem 'rspec-rails', '2.13.0'
+  gem 'guard-rspec', '3.0.2'
 end
 
 # Gems used only for assets and not required
@@ -41,5 +42,10 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 group :test do
+  gem 'rspec-rails', '2.13.0'
+  gem 'guard-spork'
   gem 'capybara', '1.1.2'
+  gem 'rb-fsevent', :require => false
+  gem 'growl'
+  gem 'spork'
 end
